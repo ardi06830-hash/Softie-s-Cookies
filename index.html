@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Softie's Cookie – Soft Cookies Kediri</title>
+<meta name="description" content="Soft cookies dan brownie bites buatan tangan, dipanggang fresh di Kediri. Mulai dari Rp5 ribu.">
+<meta property="og:title" content="Softie's Cookie – Soft Cookies Kediri">
+<meta property="og:description" content="Soft. Chewy. Worth every rupiah.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a href="#" class="logo">Softie's Cookie</a>
+  <nav><a href="#menu">Menu</a><a href="#ulasan">Ulasan</a><a href="#tentang">Tentang</a><a href="#pesan" class="btn small">Pesan</a></nav>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-text">
+    <h1>Soft cookies favorit warga Kediri</h1>
+    <p>Cookies soft dan brownie bites buatan tangan, dipanggang fresh di Kediri. Mulai dari Rp5 ribu.</p>
+    <div class="cta"><a href="#menu" class="btn">Lihat Menu</a><a href="#pesan" class="btn ghost">Pesan via WA</a></div>
+  </div>
+  <div class="stack" aria-hidden="true">
+    <span class="cookie" style="--c:#B3202F"></span>
+    <span class="cookie" style="--c:#8DAA5B"></span>
+    <span class="cookie" style="--c:#6C8FD6"></span>
+  </div>
+</section>
+
+<section id="menu" class="wrap">
+  <h2>Menu Kami</h2>
+  <p class="sub">Semua cookies dipanggang fresh. Brownies dikemas isi 7 bite, pas buat dibagi atau dimakan sendiri.</p>
+  <h3>Rasa Cookies</h3>
+  <div class="grid" id="grid-cookie"></div>
+  <h3>Varian Brownie</h3>
+  <div class="grid" id="grid-brownie"></div>
+</section>
+
+<section id="ulasan" class="wrap alt">
+  <h2>Kata Mereka</h2>
+  <p class="sub">Chat WhatsApp asli dari pelanggan. Tanpa filter. 5.0 dari 50+ pelanggan puas.</p>
+  <div class="reviews">
+    <blockquote>"Cookiesnya enak banget, lembut, chewy, dan nggak kemanisan."<cite>Pelanggan via WhatsApp</cite></blockquote>
+    <blockquote>"Packagingnya udah bagus banget. Ketahanannya juga lumayan, pas dibawa ke Kelud masih enak!"<cite>Pelanggan via WhatsApp</cite></blockquote>
+    <blockquote>"Kritik? Nggak ada, udah pas banget, apalagi harganya murah."<cite>Pelanggan via WhatsApp</cite></blockquote>
+  </div>
+</section>
+
+<section id="tentang" class="wrap">
+  <h2>Tentang Kami</h2>
+  <p class="about">Softie's Cookie lahir dari satu keyakinan sederhana: cookies yang soft, chewy, dan terjangkau harus bisa dinikmati semua orang. Setiap batch dibuat dengan tangan, bahan berkualitas, dan tekstur yang diperhatikan betul.</p>
+  <p class="about">Dari dapur rumah kami di Kediri ke tanganmu. Dibuat fresh, dikemas dengan sepenuh hati, dan worth every rupiah.</p>
+  <!-- TODO: konfirmasi alamat ke client -->
+  <p class="about"><strong>Lokasi:</strong> Jl. Dhoho, Kota Kediri / Kandat, Kab. Kediri, Gg. Masjid Ngadiluwih</p>
+</section>
+
+<section id="pesan" class="wrap alt">
+  <h2>Yuk, Pesan Cookies-nya!</h2>
+  <p class="sub">Isi formulir, nanti kami konfirmasi lewat WhatsApp dalam 1-2 jam.</p>
+  <div class="form" id="orderForm">
+    <label>Nama<input id="nama" placeholder="mis. Rani" autocomplete="name"></label>
+    <label>Nomor WhatsApp<input id="wa" inputmode="tel" placeholder="mis. 08123456789"></label>
+    <label>Jenis produk
+      <select id="kategori"><option value="">Pilih kategori</option><option value="cookie">Cookies</option><option value="brownie">Brownie</option></select>
+    </label>
+    <label>Varian<select id="varian" disabled><option value="">Pilih kategori dulu</option></select></label>
+    <label>Jumlah<input id="qty" type="number" min="1" value="1"></label>
+    <label>Tanggal ambil / antar<input id="tanggal" type="date"></label>
+    <label>Metode
+      <select id="metode"><option>Ambil di tempat</option><option>Diantar</option></select>
+    </label>
+    <label id="alamatWrap" hidden>Alamat pengantaran<input id="alamat" placeholder="Alamat lengkap di Kediri"></label>
+    <label class="full">Catatan<textarea id="catatan" rows="3" placeholder="Kemasan custom, ucapan ulang tahun, alergi, dll."></textarea></label>
+    <p class="total">Total: <strong id="total">Rp0</strong></p>
+    <p id="status" class="status" role="status"></p>
+    <button class="btn" id="kirim" type="button">Kirim Pesanan</button>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p>Soft. Chewy. Worth every rupiah.</p>
+  <p>Kediri, Jawa Timur · <a href="https://instagram.com/softies.cookie">@softies.cookie</a></p>
+  <p>© 2026 Softie's Cookie</p>
+</footer>
+<a class="wa-float" id="waFloat" href="#" aria-label="Chat WhatsApp">Chat WA</a>
+<script src="script.js"></script>
+</body>
+</html>
